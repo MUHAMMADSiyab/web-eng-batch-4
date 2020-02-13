@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css?family=Coda+Caption:800&display=swap");
+
+h1 {
+  color: crimson;
+  font-size: 1.5in;
+  font-family: "Coda Caption", sans-serif;
+  text-align: center;
+  letter-spacing: 40px;
+  text-transform: capitalize;
+  text-decoration: none;
+  text-shadow: 5px 10px 50px orange;
+}
+
+p {
+  text-align: justify;
+  /* word-spacing: 50px; */
+  text-indent: 0.5in;
+  column-count: 3;
+  column-gap: 50px;
+  line-height: 30px;
+}
