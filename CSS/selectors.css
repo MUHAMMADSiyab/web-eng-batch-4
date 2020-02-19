@@ -1,0 +1,74 @@
+/* ID & Class Selector */
+
+/* . for Class */
+.myheading {
+  color: purple;
+  font-size: 2in;
+  font-family: sans-serif;
+}
+
+/* # for ID */
+#head-2 {
+  color: tomato;
+  font-family: sans-serif;
+}
+
+/* All Selector */
+* {
+  /* margin: 100px; */
+}
+
+/* ----------------- Relation based selectors ----------------- */
+
+/**** DESCENDENT SELECTORS ****/
+
+/* i. All direct children */
+.container > a {
+  font-family: sans-serif;
+}
+
+/* ii. All children */
+.container a {
+  color: orangered;
+}
+
+/**** SIBLING SELECTORS ****/
+
+/* i. Direct sibling */
+h2#content + h4 {
+  color: chartreuse;
+}
+
+/* ii. All siblings */
+h2#content ~ h4 {
+  color: chocolate;
+  font-family: sans-serif;
+}
+/* ------------------------------------------------------- */
+button {
+  width: 150px;
+  height: 45px;
+  font-family: sans-serif;
+  font-size: 105%;
+  color: #fff;
+  background-color: coral;
+  border: 0;
+}
+
+/* ----------- PSUEDO SELECTORS --------- */
+button:hover {
+  background-color: rgb(75, 22, 3);
+  font-size: 120%;
+}
+button:focus {
+  background-color: rgb(0, 0, 0);
+}
+
+ul li:nth-child(odd) {
+  color: rgb(136, 221, 9);
+  font-size: 150%;
+}
+ul li:nth-child(even) {
+  color: rgb(194, 13, 13);
+  font-size: 170%;
+}
