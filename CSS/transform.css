@@ -1,0 +1,17 @@
+#box {
+  width: 150px;
+  height: 150px;
+  /* background: linear-gradient(royalblue, lightblue); */
+  background-color: purple;
+  margin: 120px auto;
+  /* transform: translate(100px, 100px); */
+  /* transform: rotate(-90deg); */
+  /* transform: skew(50deg); */
+}
+
+#box:hover {
+  background-color: rgb(49, 22, 49);
+  transform: scale(2, 2);
+  border-radius: 50%;
+  transition: all 1s cubic-bezier(0, 1.64, 1, 1);
+}
