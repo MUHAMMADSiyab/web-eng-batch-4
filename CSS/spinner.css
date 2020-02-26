@@ -1,0 +1,40 @@
+@keyframes spin {
+  0% {
+    /* transform: rotate(0deg); */
+    /* transform: scale(1, 1); */
+    transform: translateX(0px);
+    /* opacity: 0; */
+  }
+  25% {
+    /* transform: rotate(360deg); */
+    transform: translateX(200px);
+    /* transform: scale(4, 4); */
+    /* opacity: 1; */
+  }
+  50% {
+    transform: translateY(200px);
+  }
+  75% {
+    transform: translateX(0px);
+    transform: translateY(200px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+body {
+  background: rgb(14, 13, 13);
+}
+
+.spinner {
+  width: 180px;
+  height: 180px;
+  margin: 180px auto;
+  background: transparent;
+  border: 0;
+  border-radius: 50% 0 50% 0;
+  border-top: 20px solid rgb(195, 0, 255);
+  border-bottom: 20px solid rgb(0, 247, 255);
+  animation: spin 1s linear infinite;
+}
