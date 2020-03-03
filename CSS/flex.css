@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: rgb(255, 220, 206);
+  height: 500px;
+  padding: 50px;
+  display: flex;
+  flex-wrap: nowrap;
+  /* flex-direction: column-reverse; */
+  /* flex-direction: row-reverse; */
+  /* flex-flow: row-reverse wrap; */ /* Shordand for flex-wrap & flex-dir */
+
+  /* Alignment */
+  justify-content: space-around; /* Horizontal alignment */
+  align-items: center; /* Vertical alignment */
+}
+
+.container > .item {
+  width: 100px;
+  height: 100px;
+  line-height: 100px;
+  font-size: larger;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.container > .item:nth-child(odd) {
+  background-color: lightgrey;
+}
+
+.container > .item:nth-child(even) {
+  background-color: lightblue;
+}
+
+/* -------------- Example with flex-basis ------------------ */
+.wrapper {
+  color: #fff;
+  font-family: sans-serif;
+  font-size: larger;
+  display: flex;
+}
+
+.wrapper > .child {
+  height: 150px;
+}
+
+.wrapper > .child:nth-child(odd) {
+  background-color: limegreen;
+}
+.wrapper > .child:nth-child(even) {
+  background-color: tomato;
+}
+
+.wrapper > .child:nth-child(1) {
+  flex-basis: 10%;
+}
+.wrapper > .child:nth-child(2) {
+  flex-basis: 60%;
+}
+.wrapper > .child:nth-child(3) {
+  flex-basis: 30%;
+}
