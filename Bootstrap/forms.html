@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>BS4 Forms</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-sm-6">
+          <h3>User Login</h3>
+          <hr />
+          <form class="was-validated">
+            <div class="form-group">
+              <label for="username" class="control-label col-sm-4"
+                >Username</label
+              >
+
+              <div class="col-sm-8">
+                <input
+                  type="text"
+                  id="username"
+                  placeholder="Enter username"
+                  class="form-control"
+                  required
+                />
+
+                <span class="invalid-feedback">
+                  <strong>This field shouldn't be empty</strong>
+                </span>
+
+                <span class="valid-feedback">
+                  <strong>Ok</strong>
+                </span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="password" class="control-label col-sm-4"
+                >Password</label
+              >
+
+              <div class="col-sm-8">
+                <input
+                  type="password"
+                  id="password"
+                  placeholder="Enter password"
+                  class="form-control"
+                  required
+                />
+
+                <span class="invalid-feedback">
+                  <strong>This field shouldn't be empty</strong>
+                </span>
+
+                <span class="valid-feedback">
+                  <strong>Ok</strong>
+                </span>
+              </div>
+            </div>
+
+            <!-- <div class="col">
+              <input type="submit" value="Login" class="btn btn-primary" />
+            </div> -->
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
