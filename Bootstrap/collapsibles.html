@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    />
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <title>Bootstrap Collapsibles</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <row>
+        <div class="col-sm-6" id="top-elem">
+          <button
+            class="btn btn-primary"
+            data-toggle="collapse"
+            data-target="#content"
+          >
+            Click to show/hide content
+          </button>
+
+          <div id="content" class="collapse mt-3" data-parent="#top-elem">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed,
+            quasi nostrum amet magni cumque ullam quisquam recusandae dicta
+            veniam, a id ut distinctio earum veritatis! Fuga obcaecati eveniet
+            accusamus!
+          </div>
+          <br /><br />
+          <button
+            class="btn btn-primary"
+            data-toggle="collapse"
+            data-target="#content2"
+          >
+            Click to show/hide content
+          </button>
+
+          <div id="content2" class="collapse mt-3" data-parent="#top-elem">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel sed,
+            quasi nostrum amet magni cumque ullam quisquam recusandae dicta
+            veniam, a id ut distinctio earum veritatis! Fuga obcaecati eveniet
+            accusamus!
+          </div>
+        </div>
+      </row>
+    </div>
+  </body>
+</html>
