@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!-- jQuery library -->
+    <script src="./js/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="./js/bootstrap.min.js"></script>
+    <title>Bootstrap Tabs</title>
+
+    <style>
+      .nav-tabs .nav-item.show .nav-link,
+      .nav-tabs .nav-link.active {
+        border-top: 3px solid #000;
+        font-weight: bold;
+        color: #fff;
+        background-color: rgb(218, 84, 35);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="col-sm-12">
+        <!-- Menu -->
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a href="#home" data-toggle="tab" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" data-toggle="tab" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" data-toggle="tab" class="nav-link">Contact</a>
+          </li>
+          <li class="nav-item">
+            <a href="#hire" data-toggle="tab" class="nav-link">Hire</a>
+          </li>
+        </ul>
+
+        <!-- Tab content -->
+        <div class="tab-content">
+          <div class="tab-pane active" id="home">
+            <div class="container mt-4">
+              <h2>This is Home Tab</h2>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="contact">
+            <div class="container mt-4">
+              <h2>This is Contact Tab</h2>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="about">
+            <div class="container mt-4">
+              <h2>This is About Tab</h2>
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="hire">
+            <div class="container mt-4">
+              <h2>This is Hire Tab</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
